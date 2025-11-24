@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React from 'react';
 import { TileData } from '../types';
 import { Tile } from './Tile';
 import { TILE_SIZE } from '../constants';
