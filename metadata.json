@@ -1,0 +1,5 @@
+{
+  "name": "羊了个羊 (Sheep Match)",
+  "description": "一款模仿《羊了个羊》的超难消除游戏。凑齐3个相同图案消除，AI会根据你的胜负情况进行嘲讽或鼓励。",
+  "requestFramePermissions": []
+}

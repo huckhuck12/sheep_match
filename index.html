@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>羊了个羊</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Nunito', "PingFang SC", "Microsoft YaHei", sans-serif;
+        background-color: #c6e6a6; /* Soft grass green */
+        overscroll-behavior: none;
+      }
+      /* Custom animations */
+      @keyframes popIn {
+        0% { transform: scale(0.8); opacity: 0; }
+        60% { transform: scale(1.05); opacity: 1; }
+        100% { transform: scale(1); opacity: 1; }
+      }
+      @keyframes matchDisappear {
+        0% { transform: scale(1); opacity: 1; box-shadow: 0 0 15px rgba(253, 224, 71, 0.8); border-color: #fbbf24; z-index: 50; }
+        50% { transform: scale(1.1); opacity: 0.8; }
+        100% { transform: scale(0); opacity: 0; }
+      }
+      @keyframes modalBounce {
+        0% { transform: scale(0.9); opacity: 0; }
+        70% { transform: scale(1.02); }
+        100% { transform: scale(1); opacity: 1; }
+      }
+      
+      .animate-pop-in {
+        animation: popIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+      }
+      
+      .animate-match {
+        animation: matchDisappear 0.4s ease-in forwards;
+      }
+      
+      .animate-modal {
+        animation: modalBounce 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
